@@ -3,9 +3,7 @@ const bot = new Discord.Client();
 var token = process.env.TOKEN;
 
 bot.on('ready', () => {
-   
-	bot.user.setActivity("Game"); 
-       
+	bot.user.setGame("k>ajuda", "https://www.twitch.tv/deivizin_"); 
 })
 
 bot.on('message', message => {
