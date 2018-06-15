@@ -2,17 +2,17 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 var token = process.env.TOKEN;
 
-#function sleep(milliseconds) {
- # var start = new Date().getTime();
- # for (var i = 0; i < 1e7; i++) {
-   # if ((new Date().getTime() - start) > milliseconds){
-   #   break;
-   # }
-#  }
+//function sleep(milliseconds) {
+ // var start = new Date().getTime();
+ //for (var i = 0; i < 1e7; i++) {
+   // if ((new Date().getTime() - start) > milliseconds){
+   //  break;
+   // }
+//  }
 
 function setGame() {
 	bot.user.setGame("k>ajuda", "https://www.twitch.tv/deivizin_");
-	#sleep(10000);
+	//sleep(10000);
 	bot.user.setGame("Quer meu link de convite? digite k>invite", "https://www.twitch.tv/deivizin_");		
 }
 	
