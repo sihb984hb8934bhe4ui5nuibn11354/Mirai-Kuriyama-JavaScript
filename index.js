@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 var token = process.env.TOKEN;
 	
 bot.on('ready', () => {
-	bot.user.setActivity("amor para "+client.guilds.size+" servidores | k>ajuda"
+	bot.user.setActivity("amor para "+bot.guilds.size+" servidores | k>ajuda")
 	console.log("Javascript Injectato!")
 })
 
