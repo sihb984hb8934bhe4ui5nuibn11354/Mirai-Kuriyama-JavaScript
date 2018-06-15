@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 var token = process.env.TOKEN;
 	
 bot.on('ready', () => {
-	bot.user.setGame("amor para "+bot.servers.toString()+" servidores! | k>ajuda", "https://www.twitch.tv/deivizin_");
+	bot.user.setGame("amor para "+bot.servers+" servidores! | k>ajuda", "https://www.twitch.tv/deivizin_");
 })
 
 bot.on('message', message => {
