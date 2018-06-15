@@ -20,7 +20,7 @@ async function setGame() {
 }
 	
 bot.on('ready', () => {
-	await setGame()
+	setTimeout(setGame, 3000)
 	console.log("Javascript Injetado!")
 })
 
