@@ -17,6 +17,7 @@ function setGame() {
 	sleep(5000);
 	console.log("Trocado com sucesso")
 	bot.user.setGame("Quer meu link de convite? digite k>invite", "https://www.twitch.tv/deivizin_");
+	setTimeout(setGame, 7000)
 }
 	
 bot.on('ready', () => {
