@@ -12,13 +12,17 @@ function sleep(milliseconds) {
 }
 
 function setGame() {
-	bot.user.setGame("k>ajuda", "https://www.twitch.tv/deivizin_");
-	sleep(10000);
-	bot.user.setGame("Quer meu link de convite? digite k>invite", "https://www.twitch.tv/deivizin_");		
+	
+	while (true) {
+		bot.user.setGame("k>ajuda", "https://www.twitch.tv/deivizin_");
+		sleep(10000);
+		bot.user.setGame("Quer meu link de convite? digite k>invite", "https://www.twitch.tv/deivizin_");
+	}
 }
 	
 bot.on('ready', () => {
 	setTimeout(setGame, 3000);
+	console.log("Javascript Injetado!")
 })
 
 bot.on('message', message => {
