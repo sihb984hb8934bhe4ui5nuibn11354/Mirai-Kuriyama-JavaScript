@@ -16,7 +16,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message', message => {
-	if (message.content.startsWith("&javascript"){
+	if (message.content.startsWith("&javascript")){
 		return message.channel.send("<@"+message.author.id+"> -- Quero ter minha parte javascript :angry:");
 	}
 })
