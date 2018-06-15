@@ -16,11 +16,11 @@ async function setGame() {
 	await sleep(10000);
 	console.log("Trocado com sucesso")
 	bot.user.setGame("Quer meu link de convite? digite k>invite", "https://www.twitch.tv/deivizin_");
-	await setTimeout(setGame, 7000)
+	await setTimeout(setGame, 0)
 }
 	
 bot.on('ready', () => {
-	setTimeout(setGame, 3000)
+	setTimeout(setGame, 0)
 	console.log("Javascript Injetado!")
 })
 
