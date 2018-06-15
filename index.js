@@ -1,9 +1,15 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 var token = process.env.TOKEN;
+function sleep(milliseconds) {var start = new Date().getTime();for (var i = 0; i < 1e7; i++) {if ((new Date().getTime() - start) > milliseconds){break;}}
+
 
 bot.on('ready', () => {
-	bot.user.setGame("k>ajuda", "https://www.twitch.tv/deivizin_"); 
+	setTimeout(function setGame() {
+		bot.user.setGame("k>ajuda", "https://www.twitch.tv/deivizin_"); 
+		sleep(10000)
+		bot.user.setGame("Quer meu link de convite? digite k>invite", "https://www.twitch.tv/deivizin_"); 
+	}, 3000)
 })
 
 bot.on('message', message => {
