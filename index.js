@@ -14,7 +14,7 @@ function sleep(milliseconds) {
 function setGame() {
 	
 	bot.user.setGame("k>ajuda", "https://www.twitch.tv/deivizin_");
-	sleep(5000);
+	sleep(10000);
 	console.log("Trocado com sucesso")
 	bot.user.setGame("Quer meu link de convite? digite k>invite", "https://www.twitch.tv/deivizin_");
 	setTimeout(setGame, 7000)
