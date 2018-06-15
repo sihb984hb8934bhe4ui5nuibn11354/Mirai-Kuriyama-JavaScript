@@ -1,27 +1,9 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 var token = process.env.TOKEN;
-
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
-}
-
-async function setGame() {
-	bot.user.setGame("k>ajuda", "https://www.twitch.tv/deivizin_");
-	await sleep(10000);
-	console.log("Trocado com sucesso")
-	bot.user.setGame("Quer meu link de convite? digite k>invite", "https://www.twitch.tv/deivizin_");
-	await setTimeout(setGame, 0)
-}
 	
 bot.on('ready', () => {
-	setTimeout(setGame, 0)
-	console.log("Javascript Injetado!")
+	bot.user.setGame("amor para "+bot.servers.toString()+" servidores! | k>ajuda", "https://www.twitch.tv/deivizin_");
 })
 
 bot.on('message', message => {
