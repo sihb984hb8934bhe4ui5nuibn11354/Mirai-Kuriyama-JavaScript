@@ -19,12 +19,12 @@ async function setGame() {
 	await setTimeout(setGame, 7000)
 }
 	
-async bot.on('ready', () => {
+bot.on('ready', () => {
 	await setGame()
 	console.log("Javascript Injetado!")
 })
 
-async bot.on('message', message => {
+bot.on('message', message => {
 	if (message.content.startsWith("&javascript")){
 		await message.channel.send("<@"+message.author.id+"> -- Quero ter minha parte javascript :angry:");
 	}
