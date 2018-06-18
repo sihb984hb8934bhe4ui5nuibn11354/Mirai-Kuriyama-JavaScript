@@ -3,7 +3,6 @@ const bot = new Discord.Client();
 var token = process.env.TOKEN;
 	
 bot.on('ready', () => {
-	bot.user.setGame("amor para "+bot.users.size+" usuários | !majuda", "https://www.twitch.tv/deivizin_")
 	console.log("Javascript Injectato!")
 })
 
